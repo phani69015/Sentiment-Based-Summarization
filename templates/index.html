@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Sentiment-based News Article Summarizer</title>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='styles.css') }}">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="{{ url_for('static', filename='script.js') }}"></script>
+</head>
+<body>
+    <div class="container">
+        <h1>Sentiment-based News Article Summarizer</h1>
+        <form id="article-form">
+            <label for="article">Paste the News Article:</label><br>
+            <textarea id="article" name="article" rows="10" cols="100"></textarea><br>
+            <button type="submit">Summarize</button>
+        </form>
+        
+        <div id="results"></div>
+    </div>
+</body>
+</html>
